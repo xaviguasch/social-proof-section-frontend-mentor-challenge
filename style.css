@@ -6,13 +6,158 @@
   padding: 0;
 }
 
+/* Custom properties */
+
+:root {
+  --ff-sans: 'Spartan', sans-serif;
+
+  --fw-light: 400;
+  --fw-reg: 500;
+  --fw-bold: 700;
+
+  --fs-body: 0.938rem;
+
+  --clr-white-bg: hsl(0, 0%, 100%);
+
+  --clr-very-dark-magenta-text: hsl(300, 43%, 22%);
+  --clr-soft-pink-text: hsl(333, 80%, 67%);
+
+  --clr-dark-grayish-magenta-text: hsl(303, 10%, 53%);
+  --clr-light-grayish-magenta-text: hsl(300, 24%, 96%);
+}
+
 html {
   height: 100%;
 }
 
 body {
   margin: 0;
-  /* font-family: 'Kumbh Sans', sans-serif; */
   height: 100%;
-  background-color: red;
+  font-family: var(--ff-sans);
+  font-size: var(--fs-body);
+  color: var(--clr-very-dark-magenta-text);
+  text-align: center;
+}
+
+/* Typography */
+.copy-headline {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  line-height: 1;
+
+  letter-spacing: -1px;
+}
+
+.copy-text {
+  color: var(--clr-dark-grayish-magenta-text);
+  font-weight: var(--fw-light);
+  line-height: 1.7;
+}
+
+.rating-text {
+  font-weight: var(--fw-bold);
+}
+
+.testim-name {
+  color: var(--clr-light-grayish-magenta-text);
+}
+
+.testim-position {
+  color: var(--clr-soft-pink-text);
+}
+.testim-copy {
+  color: var(--clr-light-grayish-magenta-text);
+}
+
+/* Utility styles */
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+
+  max-width: 370px;
+  background-image: url('./images/bg-pattern-top-mobile.svg');
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+/* SECTIONS */
+
+.main {
+  margin: 1em auto 5em;
+}
+
+/* Hero Section */
+.hero {
+  margin: 1em auto 3em;
+}
+
+.main-copy {
+  padding: 2em 0;
+}
+.copy-headline {
+  padding: 1em 0;
+}
+.copy-text {
+  padding: 0;
+}
+
+.rating {
+  padding: 0.75em 1em;
+  margin: 1em auto;
+
+  background-color: var(--clr-light-grayish-magenta-text);
+  border-radius: 0.5em;
+}
+
+.rating-stars {
+  margin-bottom: 0.5em;
+}
+
+.fa-star {
+  color: hsl(36, 90%, 49%);
+}
+
+.fa-star + .fa-star {
+  margin-left: 0.5em;
+}
+
+/* Testimonials */
+.testim-card {
+  background-color: var(--clr-very-dark-magenta-text);
+  margin: 1em auto;
+  padding: 2em 1.5em;
+  border-radius: 0.5em;
+}
+
+.testim-header {
+  display: flex;
+  gap: 0.75em;
+  margin-bottom: 1em;
+}
+
+.testim-details {
+  margin-top: 0.5em;
+}
+
+.avatar-picture {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.testim-copy {
+  text-align: left;
+}
+
+/* Footer */
+
+.footer {
+  padding: 0.5em 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

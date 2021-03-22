@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <script
+      src="https://kit.fontawesome.com/4274d2b2e7.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
 
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -35,15 +33,27 @@
 
           <div class="ratings">
             <div class="rating">
-              <div class="rating-stars">⭐️⭐️⭐️⭐️⭐️</div>
+              <div class="rating-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
               <div class="rating-text">Rated 5 Stars in Reviews</div>
             </div>
             <div class="rating">
-              <div class="rating-stars">⭐️⭐️⭐️⭐️⭐️</div>
+              <div class="rating-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
               <div class="rating-text">Rated 5 Stars in Report Guru</div>
             </div>
             <div class="rating">
-              <div class="rating-stars">⭐️⭐️⭐️⭐️⭐️</div>
+              <div class="rating-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
               <div class="rating-text">Rated 5 Stars in BestTech</div>
             </div>
           </div>
@@ -52,8 +62,13 @@
         <div class="testimonials">
           <div class="testim-card">
             <div class="testim-header">
-              <div class="testim-name">Colton Smith</div>
-              <div class="testim-position">Verified Buyer</div>
+              <div class="testim-avatar">
+                <img class="avatar-picture" src="./images/image-colton.jpg" alt="" />
+              </div>
+              <div class="testim-details">
+                <div class="testim-name">Colton Smith</div>
+                <div class="testim-position">Verified Buyer</div>
+              </div>
             </div>
             <div class="testim-main">
               <p class="testim-copy">
@@ -66,8 +81,13 @@
 
           <div class="testim-card">
             <div class="testim-header">
-              <div class="testim-name">Irene Roberts</div>
-              <div class="testim-position">Verified Buyer</div>
+              <div class="testim-avatar">
+                <img class="avatar-picture" src="./images/image-irene.jpg" alt="" />
+              </div>
+              <div class="testim-details">
+                <div class="testim-name">Irene Roberts</div>
+                <div class="testim-position">Verified Buyer</div>
+              </div>
             </div>
             <div class="testim-main">
               <p class="testim-copy">
@@ -80,8 +100,13 @@
 
           <div class="testim-card">
             <div class="testim-header">
-              <div class="testim-name">Anne Wallace</div>
-              <div class="testim-position">Verified Buyer</div>
+              <div class="testim-avatar">
+                <img class="avatar-picture" src="./images/image-anne.jpg" alt="" />
+              </div>
+              <div class="testim-details">
+                <div class="testim-name">Anne Wallace</div>
+                <div class="testim-position">Verified Buyer</div>
+              </div>
             </div>
             <div class="testim-main">
               <p class="testim-copy">
@@ -98,7 +123,7 @@
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by <a href="#">Xavi Gua</a>.
         </div>
       </footer>
     </div>
